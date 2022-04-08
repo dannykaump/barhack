@@ -89,6 +89,7 @@ main {
 
 hr {
   margin-bottom: 10px;
+  opacity: 50%;
 }
 
 .hidden {
@@ -102,4 +103,5 @@ h2 {
 
 input {
   border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.201) 
 }
