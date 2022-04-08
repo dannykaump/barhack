@@ -39,7 +39,7 @@ ul {
 
 .bullets {
   list-style-type: circle;
-  color: rgb(0, 167, 189);
+  color: rgb(0, 160, 196);
 }
 
 li {
@@ -63,14 +63,15 @@ h3 {
   font-size: 1.1em;
   margin-top: 20px;
   font-weight: 200;
+  font-size: 1em;
 }
 
 strong {
-  color: rgb(0, 167, 189);
+  color: rgb(0, 160, 196);
 }
 
 button {
-  background: rgb(0, 167, 189);
+  background: rgb(0, 160, 196);
   color: white;
   display: block;
   margin: 10px auto;
@@ -87,9 +88,7 @@ main {
 }
 
 hr {
-  opacity: 80%;
   margin-bottom: 10px;
-  border-color: rgb(0, 167, 189);
 }
 
 .hidden {
