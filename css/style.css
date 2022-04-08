@@ -23,6 +23,12 @@ img{
   gap: 5px;
 }
 
+section.two-grid {
+  margin: 20px 0;
+  width: fit-content;
+  margin: auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -46,13 +52,16 @@ body {
   text-align: center;
   color: white;
   background: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
   max-width: 75%;
-  margin: auto;
-  padding-top: 10px;
+  margin:auto;
+  padding: 10px, 0;
   font-size: 1.1em;
+  width:fit-content;
+  margin-top: 20px;
 }
 
 strong {
@@ -62,4 +71,26 @@ strong {
 button {
   background: rgb(0, 167, 189);
   color: white;
+  display: block;
+  margin: 10px auto;
+  font-weight: 700;
+  font-size: .9em;
+  padding: 2px 10px;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.016);
+  width: fit-content;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+hr {
+  opacity: 80%;
+  margin-bottom: 10px;
+  border-color: rgb(0, 167, 189);
+}
+
+.hidden {
+  display: none;
 }

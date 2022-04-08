@@ -4,10 +4,13 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Title in the tab</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -15,16 +18,17 @@
 
 		<h1>Bar<strong>hack</h1></strong>
 		<input type="text" name="" value="" placeholder="enter cocktail">
-		<button type="button" name="button">Get Cocktail</button>
-
+		<button type="button" name="button">Search</button>
 		<h2></h2>
-		<img src="" alt="">
-		<section class="two-grid">
-			<ul id='ingredients'></ul>
-			<ul id='measurements' class="bullets"></ul>
-		</section>
-		<h3></h3>
-
+		<main class="hidden">
+			<img src="" alt="">
+			<section class="two-grid">
+				<ul id='ingredients'></ul>
+				<ul id='measurements' class="bullets"></ul>
+			</section>
+			<hr>
+			<h3></h3>
+		</main>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

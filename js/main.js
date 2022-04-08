@@ -5,6 +5,7 @@ const instructions = document.querySelector('h3')
 const input = document.querySelector('input')
 const ingredients = document.querySelector('#ingredients')
 const measurements = document.querySelector('#measurements')
+const main = document.querySelector('main')
 
 document.querySelector('button').addEventListener('click', getDrink)
 
@@ -41,4 +42,5 @@ function fillList(obj, keyName, element, dest) {
 function clear() {
     ingredients.innerHTML = ''
     measurements.innerHTML = ''
+    main.classList.remove('hidden')
 }
