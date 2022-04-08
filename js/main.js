@@ -10,6 +10,12 @@ const main = document.querySelector('main')
 
 document.querySelector('button').addEventListener('click', getDrink)
 
+input.addEventListener('keyup', function onEvent(e) {
+    if (e.code === 'Enter') {
+        getDrink()
+    }
+});
+
 function getDrink() {
     clear()
     let url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input.value}`;
