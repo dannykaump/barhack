@@ -58,10 +58,6 @@ function clear() {
     ingredients.innerHTML = ''
     measurements.innerHTML = ''
     main.classList.remove('hidden')
-    h1.style.fontSize = '1.2em'
-    h1.style.position = 'absolute'
-    h1.style.top = '30px'
-    h1.style.left = '0px'
-    h1.style.textAlign = 'left'
+    h1.classList.add('side')
     input.style.marginTop = '20px'
 }

@@ -118,6 +118,14 @@ input {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 4em;
   padding: 10px;
+}
+
+.side {
+  font-size: 1.2em;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  text-align: left;
 }
