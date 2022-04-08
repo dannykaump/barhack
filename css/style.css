@@ -50,6 +50,10 @@ li {
   font-weight: 500;
 }
 
+.inputField {
+  width: 100%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -109,5 +113,11 @@ h2 {
 
 input {
   border-radius: 5px;
-  border-color: rgba(0, 0, 0, 0.201) 
+  border-color: rgba(0, 0, 0, 0.201);
+  opacity: 75%;
+}
+
+h1 {
+  font-size: 3.5em;
+  padding: 10px;
 }

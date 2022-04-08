@@ -7,6 +7,7 @@ const input = document.querySelector('input')
 const ingredients = document.querySelector('#ingredients')
 const measurements = document.querySelector('#measurements')
 const main = document.querySelector('main')
+const h1 = document.querySelector('h1')
 
 document.querySelector('button').addEventListener('click', getDrink)
 
@@ -57,4 +58,10 @@ function clear() {
     ingredients.innerHTML = ''
     measurements.innerHTML = ''
     main.classList.remove('hidden')
+    h1.style.fontSize = '1.2em'
+    h1.style.position = 'absolute'
+    h1.style.top = '30px'
+    h1.style.left = '0px'
+    h1.style.textAlign = 'left'
+    input.style.marginTop = '20px'
 }
