@@ -46,6 +46,10 @@ li {
   padding: 10px;
 }
 
+.bold {
+  font-weight: 500;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -62,8 +66,9 @@ h3 {
   padding: 10px, 0;
   font-size: 1.1em;
   margin-top: 20px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1em;
+  max-width: 600px;
 }
 
 strong {
@@ -72,10 +77,10 @@ strong {
 
 button {
   background: rgb(0, 160, 196);
-  color: white;
   display: block;
   margin: 10px auto;
-  font-weight: 700;
+  font-weight: 400;
+  color: white;
   font-size: .9em;
   padding: 2px 10px;
   border-radius: 5px;
@@ -90,6 +95,7 @@ main {
 hr {
   margin-bottom: 10px;
   opacity: 50%;
+  max-width: 600px;
 }
 
 .hidden {
