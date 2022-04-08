@@ -22,6 +22,7 @@ function getDrink() {
             const drinkKeys = Object.keys(drink)
             // update DOM 
             updateDOM(drink, drinkKeys)
+            input.value = ''
           })
           .catch(err => {
               console.log(`error ${err}`)
