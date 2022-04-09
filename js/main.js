@@ -4,6 +4,7 @@ const drinkName = document.querySelector('h2')
 const img = document.querySelector('img')
 const instructions = document.querySelector('h3')
 const input = document.querySelector('input')
+const button = document.querySelector('button')
 const ingredients = document.querySelector('#ingredients')
 const measurements = document.querySelector('#measurements')
 const main = document.querySelector('main')
@@ -30,9 +31,11 @@ function getDrink() {
             // update DOM 
             updateDOM(drink, drinkKeys)
             input.value = ''
+            console.log(data)
           })
           .catch(err => {
               console.log(`error ${err}`)
+              input.placeholder = 'cocktail not found'
           });
 }    
 // searches object's keys for values & adds them to appropriate list
@@ -59,5 +62,6 @@ function clear() {
     measurements.innerHTML = ''
     main.classList.remove('hidden')
     h1.classList.add('side')
-    input.style.marginTop = '20px'
+    input.style.marginTop = '18px'
+    button.style.marginTop = '18px'
 }
