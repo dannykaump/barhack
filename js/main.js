@@ -44,7 +44,7 @@ function updateDOM(drinks) {
         const measurements = fillList(propKeys, 'strMeasure', drink)
         console.log(ingredients)
         console.log(measurements)
-        main.innerHTML += `<section><hr><h2>${drink.strDrink}</h2><img src=${drink.strDrinkThumb}><section class="two-grid"><ul class="bold">${ingredients.join('')}</ul><ul class="bullets">${measurements.join('')}</ul></section><hr><h3>${drink.strInstructions}</h3></section><hr>`
+        main.innerHTML += `<section><hr><h2>${drink.strDrink}</h2><img src=${drink.strDrinkThumb}><section class="two-grid"><ul class="bold">${ingredients.join('')}</ul><ul class="bullets">${measurements.join('')}</ul></section><hr><h3>${drink.strInstructions}</h3></section>`
     })    
 }   
 
