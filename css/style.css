@@ -18,6 +18,7 @@ img{
   max-width: 350px;
   padding: none;
   border-radius: 5px;
+  padding-bottom: 15px;
 }
 
 .two-grid {
@@ -31,6 +32,8 @@ img{
 section.two-grid {
   width: 100%;
   margin: auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 ul {
@@ -50,6 +53,7 @@ li {
 
 .bold {
   font-weight: 500;
+  text-align: left;
 }
 
 .inputField {
@@ -58,6 +62,7 @@ li {
   justify-content: center;
   align-items: flex-end;
   gap: 5px;
+  padding-bottom: 10px;
 }
 
 /******************************************
@@ -99,7 +104,7 @@ button {
 
 main {
   padding-bottom: 10px;
-  margin: 0 50px;
+  margin: 0 35px;
 }
 
 hr {
