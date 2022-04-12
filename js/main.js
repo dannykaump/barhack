@@ -65,6 +65,7 @@ function getDrinks() {
     })
     .catch(err => {
         console.log(`error ${err}`)
+        input.value = ''
         input.placeholder = 'cocktail not found'
     });
 }    
@@ -101,6 +102,7 @@ function updateDOM(drinks) {
     function clear() {
         // ingredients.innerHTML = ''
         // measurements.innerHTML = ''
+    input.placeholder = ''
     main.classList.remove('hidden')
     h1.classList.add('side')
     input.style.marginTop = '18px'
