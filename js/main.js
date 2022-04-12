@@ -1,12 +1,10 @@
 //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
-
-const drinkName = document.querySelector('h2')
 const img = document.querySelector('img')
-const instructions = document.querySelector('h3')
 const input = document.querySelector('input')
 const button = document.querySelector('button')
 const main = document.querySelector('main')
 const h1 = document.querySelector('h1')
+const bottomLine = document.querySelector('#bottom-line')
 
 document.querySelector('button').addEventListener('click', getDrinks)
 
@@ -65,6 +63,7 @@ function fillList(keys, keyName, obj) {
 function clear() {
     input.placeholder = 'Enter Cocktail'
     main.classList.remove('hidden')
+    bottomLine.classList.remove('hidden')
     h1.classList.add('side')
     input.style.marginTop = '18px'
     button.style.marginTop = '18px'
