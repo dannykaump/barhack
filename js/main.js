@@ -68,28 +68,34 @@ function getDrinks() {
         input.placeholder = 'cocktail not found'
     });
 }    
-
-function updateDOM(keys) {
-    let ingredients = `<ul></ul>`
-    let measurements = `<ul></ul>`
-    keys.forEach(function(key) {
-        const propKeys = Object.keys(key)
-        fillList(propKeys, 'StrIngredient', propKeys[0], ingredients)
-        fillList(propKeys, 'StrIngredient', propKeys[0], measurements)
-        main.innerHTML += `<section><h2>${key.strDrink}</h2><img src=${key.strDrinkThumb}>${ingredients}${measurements}<h3>${key.strInstructions}</h3></section>`
+// make fillList return values you stupid stupid dipshit
+function updateDOM(drinks) {
+   
+    drinks.forEach(function(drink) {
+        let propKeys = Object.keys(drink)
+        const ingredients = fillList(propKeys, 'strIngredient', drink)
+        const measurements = fillList(propKeys, 'strMeasure', drink)
+        console.log(ingredients)
+        console.log(measurements)
+        main.innerHTML += `<section><h2>${drink.strDrink}</h2><img src=${drink.strDrinkThumb}><section class="two-grid"><ul class="bold">${ingredients.join('')}</ul><ul class="bullets">${measurements.join('')}</ul></section><h3>${drink.strInstructions}</h3></section><hr>`
     })
     
 }   
 
-    function fillList(keys, keyName, obj, dest) {
+    function fillList(keys, keyName, obj) {
+        let arr = []
         keys.forEach(function(key) {
-            console
+            console.log(obj + keyName + keys)
             if (key.startsWith(keyName)) { // *ingredient1, ingredient2, ingredient3....*
                 if (obj[key] !== null) {
-                    dest += `<li>${obj[key]}</li>`
+                    
+                    // make dest array
+                    arr.push(`<li>${obj[key]}</li>`)
+                    console.log(arr)
                 }
             }
         })
+        return arr
     }
     
     function clear() {
